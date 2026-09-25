@@ -87,7 +87,7 @@ El sitio utiliza el tema **Navigator Hugo**.
    title: "Título"
    date: YYYY-MM-DD
    description: "Breve descrpción"
-   image: /images/"ejemplo"
+   image:images/"ejemplo"
    categories:
       - "Categoría 1"
       - "Categoría 2"
@@ -159,14 +159,14 @@ Usa rutas que empiecen por `/local/`. Los templates de Hugo se encargan de resol
 ```yaml
 ---
 title: "Mi post"
-image: /local/images/blog/mi-imagen.jpg
+image:local/images/blog/mi-imagen.jpg
 ---
 ```
 
 ```yaml
 ---
 title: "Mi presentación"
-image: /local/transpas/2025/portada.png
+image:local/transpas/2025/portada.png
 slides:
   pdf: /local/transpas/2025/mi-presentacion.pdf
   odp: /local/transpas/2025/mi-presentacion.odp
@@ -212,7 +212,7 @@ También funciona con el shortcode `image`:
 El partial `layouts/partials/resolve-image.html` contiene esta lógica:
 
 ```
-Si la ruta empieza por "/local/" →
+Si la ruta empieza por "local/" →
     se construye: rawBase + ruta
     (ej: https://gitlab.com/.../raw/master/local/images/blog/foto.jpg)
 
@@ -249,7 +249,7 @@ Para insertar imágenes con atribución y licencia de forma estandarizada, se ha
 
 ```
 {{< image
-  src="/images/blog/mooc/foto-blog-3.jpg"
+  src="images/blog/mooc/foto-blog-3.jpg"
   alt="Set de grabación. En la mesa están sentados, de izquierda a derecha, Jesús M. González Barahona, Florencia Claes y Tomás Zarza."
   title="Grabación del MOOC"
   author="OfiLibre"

@@ -2,7 +2,7 @@ backend:
   name: turbo-github
   turbo_site_id: 1b3787af-b8f4-4875-817d-9a0af637e62c
 media_folder: static
-public_folder: /
+public_folder: /biblioteca.urjc
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -15,7 +15,7 @@ collections:
       preview: true
     fields:
       - { label: 'Título', name: 'title', widget: 'string' }
-      - { label: 'Fecha de publicación', name: 'date', widget: 'datetime',default: "{{now}}",  date_format: "YYYY-MM-DD" , format: "LL", picker_utc: false }
+      - { label: 'Fecha de publicación', name: 'date', widget: 'datetime',default: "{{now}}",  date_format: "YYYY-MM-DD"}
       - { label: 'Descripción', name: 'description', widget: 'string' }
       - { label: 'Categorías', name: 'categories', widget: 'hidden', default: ["Universidad"]}
       - { label: 'Etiquetas', name: 'tags', widget: 'list'}
@@ -33,7 +33,7 @@ collections:
       preview: true
     fields:
       - { label: 'Título', name: 'title', widget: 'string' }
-      - { label: 'Fecha de publicación', name: 'date', widget: 'datetime',default: "{{now}}",  date_format: "YYYY-MM-DD" , format: "LL", picker_utc: false }
+      - { label: 'Fecha de publicación', name: 'date', widget: 'datetime',default: "{{now}}",  date_format: "YYYY-MM-DD"}
       - { label: 'Descripción', name: 'description', widget: 'string' }
       - { label: 'Logo', name: 'image', widget: 'image' }
       - { label: 'Categorías', name: 'categories', widget: 'hidden', default: ["OfiLibre"]}
@@ -51,7 +51,7 @@ collections:
       preview: true
     fields:
       - { label: 'Título', name: 'title', widget: 'string' }
-      - { label: 'Fecha de publicación', name: 'date', widget: 'datetime',default: "{{now}}",  date_format: "YYYY-MM-DD" , format: "LL", picker_utc: false }
+      - { label: 'Fecha de publicación', name: 'date', widget: 'datetime',default: "{{now}}",  date_format: "YYYY-MM-DD"}
       - { label: 'Logo', name: 'image', widget: 'image' }
       - { label: 'Página web', name: 'website', widget: 'string' }
       - { label: 'Página web (español)', name: 'website_es', widget: 'string', required: false }
@@ -104,7 +104,7 @@ collections:
       preview: true
     fields:
       - { label: 'Título', name: 'title', widget: 'string' }
-      - { label: 'Fecha de publicación', name: 'date', widget: 'datetime',default: "{{now}}",  date_format: "YYYY-MM-DD" , format: "LL", picker_utc: false }
+      - { label: 'Fecha de publicación', name: 'date', widget: 'datetime',default: "{{now}}",  date_format: "YYYY-MM-DD"}
       - { label: 'Descripción', name: 'description', widget: 'string' }
       - { label: 'Logo', name: 'image', widget: 'image' }
       - label: 'Transparencias'

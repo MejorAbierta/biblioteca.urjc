@@ -31,7 +31,7 @@
                     <div class="mb-0 mt-1">
                     {{ range . }}
                     {{ $cat := . | lower | urlize }}
-                    <a href="{{ printf "/categories/%s" $cat | relLangURL }}" class="badge badge-category mr-1 mb-1 d-inline-block">
+                    <a href="{{ printf "categories/%s" $cat | relLangURL }}" class="badge badge-category mr-1 mb-1 d-inline-block">
                         {{ . | lower | title }}
                     </a>
                     {{ end }}

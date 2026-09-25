@@ -8,14 +8,14 @@
 
 {{ if eq $current_lang $es_lang_code }}
     {{ $target_lang = $en_lang_code }}
-    {{ $target_path = path.Join "/" $en_lang_code $current_path }}
+    {{ $target_path = path.Join "" $en_lang_code $current_path }}
 {{ else }}
     {{ $target_lang = $es_lang_code }}
-    {{ $target_path = replaceRE (printf "^/%s/" $en_lang_code) "/" $current_path }}
+    {{ $target_path = replaceRE (printf "^/%s/" $en_lang_code) "" $current_path }}
 {{ end }}
 
 <a href="{{ $target_path }}">
-    {{ $iconebaseurl := "/images/logos/lang-" }}
+    {{ $iconebaseurl := "images/logos/lang-" }}
     {{ $iconeendurl := ".gif" }}
     <img src="{{ delimit (slice $iconebaseurl $target_lang $iconeendurl) "" }}" alt="Cambiar a {{ $target_lang }}" />
     <span>{{ upper $target_lang }}</span>

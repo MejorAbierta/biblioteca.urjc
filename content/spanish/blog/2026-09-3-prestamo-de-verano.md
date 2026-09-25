@@ -7,7 +7,7 @@ categories:
   - Equipos
 tags:
   - ciencia abierta
-image: /blog/Prestamo_verano_2026.jpg
+image: blog/Prestamo_verano_2026.jpg
 ---
 Diversas organizaciones europeas vinculadas a universidades, bibliotecas, academias e infraestructuras científicas —entre ellas ALLEA, LIBER, IFLA, OPERAS o SPARC Europe— han publicado una declaración conjunta en la que reivindican la Ciencia Abierta como uno de los pilares fundamentales para fortalecer el Espacio Europeo de Investigación (ERA). (Acceso al documento <https://zenodo.org/records/20165184>)
 

@@ -15,7 +15,7 @@
       <div class="mb-1">
       {{ range . }}
       {{ $cat := . | lower | urlize }}
-      <a href="{{ printf "/categories/%s" $cat | relLangURL }}" class="badge badge-category mr-1">
+      <a href="{{ printf "categories/%s" $cat | relLangURL }}" class="badge badge-category mr-1">
           {{ . | lower | title }}
       </a>
       {{ end }}

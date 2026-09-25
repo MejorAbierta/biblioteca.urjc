@@ -7,7 +7,7 @@ categories:
   - Equipos
 tags:
   - ciencia abierta
-image: /blog/encuesta.png
+image: blog/encuesta.png
 ---
 Ya está activa la encuesta de satisfacción 2025 sobre los servicios que la Biblioteca URJC ofrece a través del Consorcio Madroño.
 
