@@ -1,5 +1,6 @@
 ---
 title: Prueba de nueva entrada
+date: 2026-09-25
 description: si
 categories:
   - Universidad
