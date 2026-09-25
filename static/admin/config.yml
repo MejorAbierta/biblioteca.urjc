@@ -9,8 +9,8 @@ collections:
     folder: 'content/spanish/blog'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    media_folder: '/../../../static/blog/{{slug}}'
-    public_folder: '/blog/{{slug}}'
+    media_folder: '../../../static/blog/{{slug}}'
+    public_folder: 'blog/{{slug}}'
     editor:
       preview: true
     fields:
@@ -19,7 +19,7 @@ collections:
       - { label: 'Descripción', name: 'description', widget: 'string' }
       - { label: 'Categorías', name: 'categories', widget: 'hidden', default: ["Universidad"]}
       - { label: 'Etiquetas', name: 'tags', widget: 'list'}
-      - { label: 'Logo', name: 'image', widget: 'image', default: '/logos/logo-ofilibre-2025.jpg'}
+      - { label: 'Logo', name: 'image', widget: 'image', default: 'logos/logo-ofilibre-2025.jpg'}
       - { label: 'Cuerpo', name: 'body', widget: 'markdown' }
 
   - name: 'guias'
@@ -27,7 +27,7 @@ collections:
     folder: 'content/spanish/guias'
     create: true
     slug: '{{slug}}'
-    media_folder: '/../../../static/guias/{{slug}}'
+    media_folder: '../../../static/guias/{{slug}}'
     public_folder: '../../guias/{{slug}}'
     editor:
       preview: true
@@ -45,7 +45,7 @@ collections:
     folder: 'content/spanish/fichas'
     create: true
     slug: '{{slug}}'
-    media_folder: '/../../../static/fichas/{{slug}}'
+    media_folder: '../../../static/fichas/{{slug}}'
     public_folder: '../../fichas/{{slug}}'
     editor:
       preview: true
@@ -98,7 +98,7 @@ collections:
     folder: 'content/spanish/pres'
     create: true
     slug: '{{slug}}'
-    media_folder: '/../../../static/pres/{{slug}}'
+    media_folder: '../../../static/pres/{{slug}}'
     public_folder: '../../pres/{{slug}}'
     editor:
       preview: true
