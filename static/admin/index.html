@@ -6,6 +6,17 @@
     <title>Content Manager</title>
   </head>
   <body>
+    <script>
+      window.CMS_MANUAL_INIT = true;
+
+      // Calcula la subruta actual
+      const basePath = window.location.pathname.replace(/\/admin\/?$/, '');
+
+      window.CMS_CONFIG = {
+        site_url: window.location.origin + basePath,
+        public_folder: basePath,
+      };
+    </script>
     <!-- Include the script that builds the page and powers Decap CMS -->
     <script src="https://cdn.jsdelivr.net/npm/decap-cms@beta/dist/decap-cms.js"></script>
   </body>
