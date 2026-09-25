@@ -104,7 +104,7 @@ collections:
       preview: true
     fields:
       - { label: 'Título', name: 'title', widget: 'string' }
-      - { label: 'Fecha de publicación', name: 'date', widget: 'date' }
+      - { label: 'Fecha de publicación', name: 'date', widget: 'datetime',default: "{{now}}",  date_format: "DD.MM.YYYY" , format: "LL", picker_utc: false }
       - { label: 'Descripción', name: 'description', widget: 'string' }
       - { label: 'Logo', name: 'image', widget: 'image' }
       - label: 'Transparencias'
